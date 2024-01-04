@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx browser-sync start --server --files '*.js'"
+    "dev": "npx browser-sync start --server --port 3003 --files '*.js'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {},
+  "dependencies": {}
 }

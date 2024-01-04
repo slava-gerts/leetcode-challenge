@@ -6,8 +6,22 @@
   <title>Document</title>
 </head>
 <body>
-  <button id="button">Execute current task</button>
-  <pre id="code" style="display: block; margin-top: 10px; background-color: antiquewhite;"></pre>
+  <section>
+    <label style="display: block; margin-bottom: 20px;">
+      Please select a task:
+      <select id="select-task"></select>
+    </label>
+    <button id="execute-task">Execute selected task</button>
+    <button id="display-solution">Display solution</button>
+  </section>
+  <section id="solution-section" style="display: none;">
+    <h4>Solution:</h4>
+    <pre id="solution-code" style="background-color: antiquewhite; padding: 5px;"></pre>
+  </section>
+  <section>
+    <h4>Output:</h4>
+    <pre id="result" style="display: block; margin-top: 10px; background-color: antiquewhite;"></pre>
+  </section>
   <script type="module" src="./index.js" async></script>
 </body>
 </html>
