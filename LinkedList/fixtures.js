@@ -36,3 +36,11 @@ export const l2 = {
     }
   }
 }
+
+export const l2Items = {
+  val: 1,
+  next: {
+    val: 2,
+    next: null
+  }
+}

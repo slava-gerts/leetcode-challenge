@@ -3,7 +3,7 @@ export function reorderList(head) {
   // find the middle
   let slow = head
   let fast = head
-  while (fast.next?.next) {
+  while (fast.next) {
     slow = slow.next
     fast = fast.next.next
   }
