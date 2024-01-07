@@ -44,3 +44,35 @@ export const l2Items = {
     next: null
   }
 }
+
+const linkedListForRandom = {
+  val: 7,
+  next: {
+    val: 13,
+    next: {
+      val: 11,
+      next: {
+        val: 10,
+        next: {
+          val: 1,
+          next: null,
+        }
+      }
+    }
+  }
+}
+
+const linksForRandom = [null, 0, 4, 2, 0]
+const listToStack = []
+let curr = linkedListForRandom
+while (curr) {
+  listToStack.push(curr)
+  curr = curr.next
+}
+
+linksForRandom.forEach((value, index) => {
+  const randomValue = value != null ? listToStack[value] : null
+  listToStack[index].random = randomValue
+})
+
+export const listWithRandomField = linkedListForRandom
