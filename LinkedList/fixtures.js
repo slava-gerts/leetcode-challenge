@@ -37,6 +37,43 @@ export const l2 = {
   }
 }
 
+export const l1Big = {
+  val: 9,
+  next: {
+    val: 9,
+    next: {
+      val: 9,
+      next: {
+        val: 9,
+        next: {
+          val: 9,
+          next: {
+            val: 9,
+            next: {
+              val: 9,
+              next: null
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+export const l2Big = {
+  val: 9,
+  next: {
+    val: 9,
+    next: {
+      val: 9,
+      next: {
+        val: 9,
+        next: null
+      }
+    }
+  }
+}
+
 export const l2Items = {
   val: 1,
   next: {

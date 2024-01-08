@@ -6,8 +6,9 @@ import {reorderList} from '../LinkedList/reorderList.js'
 import {findMiddle} from '../LinkedList/findMiddle.js'
 import {removeNthFromEnd} from '../LinkedList/removeNthFromEnd.js'
 import {copyRandomList} from '../LinkedList/copyRandomList.js'
+import { addTwoNumbers } from '../LinkedList/addTwoNumbers.js'
 
-import {linkedList, l1, l2, listWithRandomField} from '../LinkedList/fixtures.js'
+import {linkedList, l1, l2, l1Big, l2Big, listWithRandomField} from '../LinkedList/fixtures.js'
 
 export const tasks = new Map([
   ['reverseLinkedList', {func: reverseLinkedList, args: [cloneDeep(linkedList)]}],
@@ -17,4 +18,5 @@ export const tasks = new Map([
   ['reorderList', {func: reorderList, args: [cloneDeep(linkedList)]}],
   ['removeNthFromEnd', {func: removeNthFromEnd, args: [cloneDeep(linkedList), 2]}],
   ['copyRandomList', {func: copyRandomList, args: [listWithRandomField]}],
+  ['addTwoNumbers', {func: addTwoNumbers, args: [cloneDeep(l1Big), cloneDeep(l2Big)]}],
 ])
