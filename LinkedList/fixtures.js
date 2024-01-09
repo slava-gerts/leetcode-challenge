@@ -74,6 +74,25 @@ export const l2Big = {
   }
 }
 
+export const cycledList = (function() {
+  const lastNode = {val: -4, next: null}
+
+  const list = {
+    val: 3,
+    next: {
+      val: 2,
+      next: {
+        val: 0,
+        next: lastNode,
+      }
+    }
+  }
+
+  lastNode.next = list
+
+  return list
+})()
+
 export const l2Items = {
   val: 1,
   next: {
@@ -82,34 +101,36 @@ export const l2Items = {
   }
 }
 
-const linkedListForRandom = {
-  val: 7,
-  next: {
-    val: 13,
+export const linkedListWithRandomField = (function() {
+  const list = {
+    val: 7,
     next: {
-      val: 11,
+      val: 13,
       next: {
-        val: 10,
+        val: 11,
         next: {
-          val: 1,
-          next: null,
+          val: 10,
+          next: {
+            val: 1,
+            next: null,
+          }
         }
       }
     }
   }
-}
 
-const linksForRandom = [null, 0, 4, 2, 0]
-const listToStack = []
-let curr = linkedListForRandom
-while (curr) {
-  listToStack.push(curr)
-  curr = curr.next
-}
+  const linksToRandomFields = [null, 0, 4, 2, 0]
+  const listToStack = []
+  let curr = list
+  while (curr) {
+    listToStack.push(curr)
+    curr = curr.next
+  }
 
-linksForRandom.forEach((value, index) => {
-  const randomValue = value != null ? listToStack[value] : null
-  listToStack[index].random = randomValue
-})
+  linksToRandomFields.forEach((value, index) => {
+    const randomValue = value != null ? listToStack[value] : null
+    listToStack[index].random = randomValue
+  })
 
-export const listWithRandomField = linkedListForRandom
+  return list
+})()

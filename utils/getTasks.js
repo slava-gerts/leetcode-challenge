@@ -7,8 +7,9 @@ import {findMiddle} from '../LinkedList/findMiddle.js'
 import {removeNthFromEnd} from '../LinkedList/removeNthFromEnd.js'
 import {copyRandomList} from '../LinkedList/copyRandomList.js'
 import { addTwoNumbers } from '../LinkedList/addTwoNumbers.js'
+import { hasCycle } from '../LinkedList/hasCycle.js'
 
-import {linkedList, l1, l2, l1Big, l2Big, listWithRandomField} from '../LinkedList/fixtures.js'
+import {linkedList, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList} from '../LinkedList/fixtures.js'
 
 export const tasks = new Map([
   ['reverseLinkedList', {func: reverseLinkedList, args: [cloneDeep(linkedList)]}],
@@ -17,6 +18,7 @@ export const tasks = new Map([
   ['mergeTwoSortedLists', {func: mergeTwoLists, args: [cloneDeep(l1), cloneDeep(l2)]}],
   ['reorderList', {func: reorderList, args: [cloneDeep(linkedList)]}],
   ['removeNthFromEnd', {func: removeNthFromEnd, args: [cloneDeep(linkedList), 2]}],
-  ['copyRandomList', {func: copyRandomList, args: [listWithRandomField]}],
+  ['copyRandomList', {func: copyRandomList, args: [linkedListWithRandomField]}],
   ['addTwoNumbers', {func: addTwoNumbers, args: [cloneDeep(l1Big), cloneDeep(l2Big)]}],
+  ['hasCycle', {func: hasCycle, args: [cycledList]}],
 ])
