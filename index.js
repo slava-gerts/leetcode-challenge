@@ -4,6 +4,7 @@ const selectTask = document.getElementById('select-task')
 const executeTaskButton = document.getElementById('execute-task')
 const displaySolutionButton = document.getElementById('display-solution')
 const resultCode = document.getElementById('result')
+const inputArguments = document.getElementById('input-arguments')
 const solutionCode = document.getElementById('solution-code')
 const solutionSection = document.getElementById('solution-section')
 
@@ -23,6 +24,7 @@ executeTaskButton.onclick = function() {
 
   const result = task.func(...task.args)
 
+  inputArguments.innerHTML = JSON.stringify(...task.args)
   resultCode.innerHTML = JSON.stringify(result, null, 2)
 }
 
@@ -50,6 +52,7 @@ displaySolutionButton.onclick = function() {
 }
 
 selectTask.onchange = function() {
+  inputArguments.innerHTML = ''
   resultCode.innerHTML = ''
   hideSolution()
 }

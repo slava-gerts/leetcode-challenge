@@ -8,8 +8,9 @@ import {removeNthFromEnd} from '../LinkedList/removeNthFromEnd.js'
 import {copyRandomList} from '../LinkedList/copyRandomList.js'
 import { addTwoNumbers } from '../LinkedList/addTwoNumbers.js'
 import { hasCycle } from '../LinkedList/hasCycle.js'
+import {findDuplicate} from '../LinkedList/findDuplicate.js'
 
-import {linkedList, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList} from '../LinkedList/fixtures.js'
+import {linkedList, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList, cycledArray} from '../LinkedList/fixtures.js'
 
 export const tasks = new Map([
   ['reverseLinkedList', {func: reverseLinkedList, args: [cloneDeep(linkedList)]}],
@@ -21,4 +22,5 @@ export const tasks = new Map([
   ['copyRandomList', {func: copyRandomList, args: [linkedListWithRandomField]}],
   ['addTwoNumbers', {func: addTwoNumbers, args: [cloneDeep(l1Big), cloneDeep(l2Big)]}],
   ['hasCycle', {func: hasCycle, args: [cycledList]}],
+  ['findDuplicate', {func: findDuplicate, args: [cycledArray]}],
 ])

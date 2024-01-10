@@ -134,3 +134,5 @@ export const linkedListWithRandomField = (function() {
 
   return list
 })()
+
+export const cycledArray = [1, 3, 4, 2, 2]
