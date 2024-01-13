@@ -11,7 +11,11 @@ import { hasCycle } from '../LinkedList/hasCycle.js'
 import {findDuplicate} from '../LinkedList/findDuplicate.js'
 import {LRUCacheFunc} from '../LinkedList/LRUCache.js'
 
+import {invertTree} from '../Trees/invertTree.js'
+import {maxDepth} from '../Trees/maxDepth.js'
+
 import {linkedList, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList, cycledArray} from '../LinkedList/fixtures.js'
+import {binaryTree, binaryTree2} from '../Trees/fixtures.js'
 
 export const tasks = new Map([
   ['reverseLinkedList', {func: reverseLinkedList, args: [cloneDeep(linkedList)]}],
@@ -25,4 +29,7 @@ export const tasks = new Map([
   ['hasCycle', {func: hasCycle, args: [cycledList]}],
   ['findDuplicate', {func: findDuplicate, args: [cycledArray]}],
   ['LRUCacheFunc', {func: LRUCacheFunc, args: []}],
+  ['----------------'],
+  ['invertTree', {func: invertTree, args: [cloneDeep(binaryTree)]}],
+  ['maxDepth', {func: maxDepth, args: [cloneDeep(binaryTree2)]}]
 ])
