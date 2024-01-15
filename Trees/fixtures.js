@@ -27,3 +27,17 @@ export const binaryTree2 = new TreeNode(
   ),
   new TreeNode(3)
 )
+
+export const unBalancedTree = new TreeNode(
+  1,
+  new TreeNode(
+    2,
+    new TreeNode(
+      3,
+      new TreeNode(4),
+      new TreeNode(4),
+    ),
+    new TreeNode(3),
+  ),
+  new TreeNode(2),
+)
