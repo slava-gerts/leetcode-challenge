@@ -41,3 +41,19 @@ export const unBalancedTree = new TreeNode(
   ),
   new TreeNode(2),
 )
+
+export const tree = new TreeNode(
+  3,
+  new TreeNode(
+    4,
+    new TreeNode(1),
+    new TreeNode(2),
+  ),
+  new TreeNode(5),
+)
+
+export const subTree = new TreeNode(
+  4,
+  new TreeNode(1),
+  new TreeNode(2),
+)

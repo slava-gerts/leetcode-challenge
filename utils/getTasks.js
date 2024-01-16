@@ -15,9 +15,11 @@ import {invertTree} from '../Trees/invertTree.js'
 import {maxDepth} from '../Trees/maxDepth.js'
 import {diameterOfBinaryTree} from '../Trees/diameterOfBinaryTree.js'
 import {isBalanced} from '../Trees/isBalanced.js'
+import {isSameTree} from '../Trees/isSameTree.js'
+import {isSubTree} from '../Trees/isSubTree.js'
 
 import {linkedList, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList, cycledArray} from '../LinkedList/fixtures.js'
-import {binaryTree, binaryTree2, unBalancedTree} from '../Trees/fixtures.js'
+import {binaryTree, binaryTree2, unBalancedTree, tree, subTree} from '../Trees/fixtures.js'
 
 export const tasks = new Map([
   ['--- Linked list ------'],
@@ -37,4 +39,6 @@ export const tasks = new Map([
   ['maxDepth', {func: maxDepth, args: [cloneDeep(binaryTree2)]}],
   ['diameterOfBinaryTree', {func: diameterOfBinaryTree, args: [cloneDeep(binaryTree2)]}],
   ['isBalanced', {func: isBalanced, args: [cloneDeep(unBalancedTree)]}],
+  ['isSameTree', {func: isSameTree, args: [cloneDeep(binaryTree), cloneDeep(binaryTree)]}],
+  ['isSubTree', {func: isSubTree, args: [cloneDeep(tree), cloneDeep(subTree)]}],
 ])
