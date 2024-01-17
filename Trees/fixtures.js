@@ -57,3 +57,34 @@ export const subTree = new TreeNode(
   new TreeNode(1),
   new TreeNode(2),
 )
+
+export const searchBinaryTree = new TreeNode(
+  6,
+  new TreeNode(
+    2,
+    new TreeNode(
+      0,
+    ),
+    new TreeNode(
+      4,
+      new TreeNode(
+        3,
+      ),
+      new TreeNode(
+        5,
+      )
+    )
+  ),
+  new TreeNode(
+    8,
+    new TreeNode(
+      7,
+    ),
+    new TreeNode(
+      9,
+    )
+  )
+)
+
+export const childSearchBinaryTreeNode1 = searchBinaryTree.left
+export const childSearchBinaryTreeNode2 = childSearchBinaryTreeNode1.right
