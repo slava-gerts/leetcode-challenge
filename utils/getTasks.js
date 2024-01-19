@@ -18,6 +18,7 @@ import {isBalanced} from '../Trees/isBalanced.js'
 import {isSameTree} from '../Trees/isSameTree.js'
 import {isSubTree} from '../Trees/isSubTree.js'
 import {lowestCommonAncestor} from '../Trees/lowestCommonAncestor.js'
+import {rightSideView} from '../Trees/rightSideView.js'
 
 import {linkedList, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList, cycledArray} from '../LinkedList/fixtures.js'
 import {binaryTree, binaryTree2, unBalancedTree, tree, subTree, searchBinaryTree, childSearchBinaryTreeNode1, childSearchBinaryTreeNode2} from '../Trees/fixtures.js'
@@ -43,4 +44,5 @@ export const tasks = new Map([
   ['isSameTree', {func: isSameTree, args: [cloneDeep(binaryTree), cloneDeep(binaryTree)]}],
   ['isSubTree', {func: isSubTree, args: [cloneDeep(tree), cloneDeep(subTree)]}],
   ['lowestCommonAncestor', {func: lowestCommonAncestor, args: [searchBinaryTree, childSearchBinaryTreeNode1, childSearchBinaryTreeNode2]}],
+  ['rightSideView', {func: rightSideView, args: [cloneDeep(binaryTree2)]}],
 ])
