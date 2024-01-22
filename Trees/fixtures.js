@@ -88,3 +88,16 @@ export const searchBinaryTree = new TreeNode(
 
 export const childSearchBinaryTreeNode1 = searchBinaryTree.left
 export const childSearchBinaryTreeNode2 = childSearchBinaryTreeNode1.right
+
+export const goodNodesTree = new TreeNode(
+  3,
+  new TreeNode(
+    1,
+    new TreeNode(3)
+  ),
+  new TreeNode(
+    4,
+    new TreeNode(1),
+    new TreeNode(5)
+  )
+)
