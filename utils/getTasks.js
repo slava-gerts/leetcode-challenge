@@ -23,11 +23,14 @@ import {goodNodes} from '../Trees/goodNodes.js'
 import {isValidBST} from '../Trees/isValidBST.js'
 import {kthSmallest} from '../Trees/kthSmallest.js'
 
+import {subsets} from '../Backtracking/subsets.js'
+import {findAllDuplicates} from '../Backtracking/findAllDuplicates.js'
+
 import {linkedList, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList, cycledArray} from '../LinkedList/fixtures.js'
 import {binaryTree, binaryTree2, unBalancedTree, tree, subTree, searchBinaryTree, childSearchBinaryTreeNode1, childSearchBinaryTreeNode2, goodNodesTree, invalidSearchTree} from '../Trees/fixtures.js'
 
 export const tasks = new Map([
-  ['--- Linked list ------'],
+  ['------ Linked list ------'],
   ['reverseLinkedList', {func: reverseLinkedList, args: [cloneDeep(linkedList)]}],
   ['reverseLinkedListRecursion', {func: reverseLinkedListRecursion, args: [cloneDeep(linkedList)]}],
   ['findMiddle', {func: findMiddle, args: [cloneDeep(linkedList)]}],
@@ -51,4 +54,7 @@ export const tasks = new Map([
   ['goodNodes', {func: goodNodes, args: [cloneDeep(goodNodesTree)]}],
   ['isValidBST', {func: isValidBST, args: [cloneDeep(invalidSearchTree)]}],
   ['kthSmallest', {func: kthSmallest, args: [cloneDeep(searchBinaryTree), 3]}],
+  ['---- Backtracking ----'],
+  ['subsets', {func: subsets, args: [[1, 2, 3]]}],
+  ['fundAllDuplicates', {func: findAllDuplicates, args: [[4,3,2,7,8,2,3,1]]}],
 ])
