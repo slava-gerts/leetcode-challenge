@@ -26,6 +26,10 @@ import {kthSmallest} from '../Trees/kthSmallest.js'
 import {subsets} from '../Backtracking/subsets.js'
 import {findAllDuplicates} from '../Backtracking/findAllDuplicates.js'
 
+import {mergeSort} from '../Sorting/mergeSort.js'
+import {randomInteger} from '../Sorting/randomInteger.js'
+import {quickSort} from '../Sorting/quickSort.js'
+
 import {linkedList, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList, cycledArray} from '../LinkedList/fixtures.js'
 import {binaryTree, binaryTree2, unBalancedTree, tree, subTree, searchBinaryTree, childSearchBinaryTreeNode1, childSearchBinaryTreeNode2, goodNodesTree, invalidSearchTree} from '../Trees/fixtures.js'
 
@@ -57,4 +61,8 @@ export const tasks = new Map([
   ['---- Backtracking ----'],
   ['subsets', {func: subsets, args: [[1, 2, 3]]}],
   ['fundAllDuplicates', {func: findAllDuplicates, args: [[4,3,2,7,8,2,3,1]]}],
+  ['----- Sorting -----'],
+  ['mergeSorting', {func: mergeSort, args: [[3, 5, 1, 6, 9, 8, 2]]}],
+  ['randomInteger', {func: randomInteger, args: [0, 10]}],
+  ['quickSort', {func: quickSort, args: [[3, 5, 1, 6, 9, 8, 2]]}]
 ])
