@@ -30,6 +30,8 @@ import {mergeSort} from '../Sorting/mergeSort.js'
 import {randomInteger} from '../Sorting/randomInteger.js'
 import {quickSort} from '../Sorting/quickSort.js'
 
+import {smartSum} from '../Arrays/smartSum.js'
+
 import {linkedList, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList, cycledArray} from '../LinkedList/fixtures.js'
 import {binaryTree, binaryTree2, unBalancedTree, tree, subTree, searchBinaryTree, childSearchBinaryTreeNode1, childSearchBinaryTreeNode2, goodNodesTree, invalidSearchTree} from '../Trees/fixtures.js'
 
@@ -64,5 +66,7 @@ export const tasks = new Map([
   ['----- Sorting -----'],
   ['mergeSorting', {func: mergeSort, args: [[3, 5, 1, 6, 9, 8, 2]]}],
   ['randomInteger', {func: randomInteger, args: [0, 10]}],
-  ['quickSort', {func: quickSort, args: [[3, 5, 1, 6, 9, 8, 2]]}]
+  ['quickSort', {func: quickSort, args: [[3, 5, 1, 6, 9, 8, 2]]}],
+  ['----- Arrays ------'],
+  ['smartSum', {func: smartSum, args: [1, 2, [[3, 4], 5], 6]}],
 ])
