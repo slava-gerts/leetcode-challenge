@@ -22,6 +22,10 @@ import {rightSideView} from '../Trees/rightSideView.js'
 import {goodNodes} from '../Trees/goodNodes.js'
 import {isValidBST} from '../Trees/isValidBST.js'
 import {kthSmallest} from '../Trees/kthSmallest.js'
+import {dijkstra} from '../Trees/dijkstra.js'
+import {traverseTree} from '../Trees/traverseTree.js'
+import {maxSum} from '../Trees/maxSum.js'
+import {maxSumArbitrary} from '../Trees/maxSumArbitrary.js'
 
 import {subsets} from '../Backtracking/subsets.js'
 import {findAllDuplicates} from '../Backtracking/findAllDuplicates.js'
@@ -33,7 +37,9 @@ import {quickSort} from '../Sorting/quickSort.js'
 import {smartSum} from '../Arrays/smartSum.js'
 
 import {linkedList, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList, cycledArray} from '../LinkedList/fixtures.js'
-import {binaryTree, binaryTree2, unBalancedTree, tree, subTree, searchBinaryTree, childSearchBinaryTreeNode1, childSearchBinaryTreeNode2, goodNodesTree, invalidSearchTree} from '../Trees/fixtures.js'
+import {
+  binaryTree, binaryTree2, unBalancedTree, tree, subTree, searchBinaryTree, childSearchBinaryTreeNode1, childSearchBinaryTreeNode2, goodNodesTree, invalidSearchTree, graph, sumTree, arbitraryTree,
+} from '../Trees/fixtures.js'
 
 export const tasks = new Map([
   ['------ Linked list ------'],
@@ -60,6 +66,10 @@ export const tasks = new Map([
   ['goodNodes', {func: goodNodes, args: [cloneDeep(goodNodesTree)]}],
   ['isValidBST', {func: isValidBST, args: [cloneDeep(invalidSearchTree)]}],
   ['kthSmallest', {func: kthSmallest, args: [cloneDeep(searchBinaryTree), 3]}],
+  ['dijkstra', {func: dijkstra, args: [graph, 'a', 'e']}],
+  ['traverseTree', {func: traverseTree, args: []}],
+  ['maxSum', {func: maxSum, args: [cloneDeep(sumTree)]}],
+  ['maxSumArbitrary', {func: maxSumArbitrary, args: [cloneDeep(arbitraryTree)]}],
   ['---- Backtracking ----'],
   ['subsets', {func: subsets, args: [[1, 2, 3]]}],
   ['fundAllDuplicates', {func: findAllDuplicates, args: [[4,3,2,7,8,2,3,1]]}],

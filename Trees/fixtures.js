@@ -111,3 +111,50 @@ export const invalidSearchTree = new TreeNode(
     new TreeNode(7),
   )
 )
+
+export const sumTree = new TreeNode(
+  1,
+  new TreeNode(
+    4,
+    new TreeNode(2),
+    new TreeNode(
+      3,
+      new TreeNode(2),
+    ),
+  ),
+  new TreeNode(
+    7,
+    new TreeNode(5),
+    new TreeNode(4),
+  ),
+)
+
+export const arbitraryTree = new TreeNode(
+  -10,
+  new TreeNode(9),
+  new TreeNode(
+    20,
+    new TreeNode(
+      -3,
+      new TreeNode(
+        5,
+        new TreeNode(-2),
+      ),
+      new TreeNode(-4),
+    ),
+    new TreeNode(
+      8,
+      null,
+      new TreeNode(-2)
+    )
+  )
+)
+
+export const graph = {
+  a: {b: 2, c: 1, i: 3},
+  b: {a: 2, d: 3},
+  c: {a: 1, d: 1},
+  d: {b: 3, c: 1, e: 5},
+  e: {d: 5, i: 2},
+  i: {a: 3, e: 2},
+}
