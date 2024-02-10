@@ -37,6 +37,7 @@ import {quickSort} from '../Sorting/quickSort.js'
 import {smartSum} from '../Arrays/smartSum.js'
 import {rotateMatrix} from '../Arrays/rotateMatrix.js'
 import {trapWater, trapWater2} from '../Arrays/trapWater.js'
+import {firstMissingPositive} from '../Arrays/firstMissingPositive.js'
 
 import {amountUniquePaths} from '../DynamicProgramming/amountUniquePaths.js'
 
@@ -87,6 +88,7 @@ export const tasks = new Map([
   ['rotateMatrix', {func: rotateMatrix, args: [cloneDeep(matrix)]}],
   ['trapWater', {func: trapWater, args: [[3, 0, 2, 0, 4]]}],
   ['trapWater2', {func: trapWater2, args: [[3, 0, 2, 0, 4]]}],
+  ['firstMissingPositiva', {func: firstMissingPositive, args: [[3, 4, -1, 1]]}],
   ['----- Dynamic Programming -------'],
   ['amountUniquePaths', {func: amountUniquePaths, args: [4, 5]}],
 ])
