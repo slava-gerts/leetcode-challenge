@@ -35,11 +35,16 @@ import {randomInteger} from '../Sorting/randomInteger.js'
 import {quickSort} from '../Sorting/quickSort.js'
 
 import {smartSum} from '../Arrays/smartSum.js'
+import {rotateMatrix} from '../Arrays/rotateMatrix.js'
+import {trapWater, trapWater2} from '../Arrays/trapWater.js'
+
+import {amountUniquePaths} from '../DynamicProgramming/amountUniquePaths.js'
 
 import {linkedList, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList, cycledArray} from '../LinkedList/fixtures.js'
 import {
   binaryTree, binaryTree2, unBalancedTree, tree, subTree, searchBinaryTree, childSearchBinaryTreeNode1, childSearchBinaryTreeNode2, goodNodesTree, invalidSearchTree, graph, sumTree, arbitraryTree,
 } from '../Trees/fixtures.js'
+import {matrix} from '../Arrays/fixtures.js'
 
 export const tasks = new Map([
   ['------ Linked list ------'],
@@ -79,4 +84,9 @@ export const tasks = new Map([
   ['quickSort', {func: quickSort, args: [[3, 5, 1, 6, 9, 8, 2]]}],
   ['----- Arrays ------'],
   ['smartSum', {func: smartSum, args: [1, 2, [[3, 4], 5], 6]}],
+  ['rotateMatrix', {func: rotateMatrix, args: [cloneDeep(matrix)]}],
+  ['trapWater', {func: trapWater, args: [[3, 0, 2, 0, 4]]}],
+  ['trapWater2', {func: trapWater2, args: [[3, 0, 2, 0, 4]]}],
+  ['----- Dynamic Programming -------'],
+  ['amountUniquePaths', {func: amountUniquePaths, args: [4, 5]}],
 ])
