@@ -41,6 +41,7 @@ import {firstMissingPositive} from '../Arrays/firstMissingPositive.js'
 import {mergeArrays} from '../Arrays/mergeArrays.js'
 import {findMaximumValue} from '../Arrays/findMaximumValue.js'
 import {removeElement} from '../Arrays/removeElement.js'
+import {removeDuplicates} from '../Arrays/removeDuplicates.js'
 
 import {amountUniquePaths} from '../DynamicProgramming/amountUniquePaths.js'
 
@@ -95,6 +96,7 @@ export const tasks = new Map([
   ['mergeArrays', {func: mergeArrays, args: [[3, 6, 9], 3, [2, 7, 8], 3]}],
   ['findMaximumValue', {func: findMaximumValue, args: [[1, -3, 0.1, -5]]}],
   ['removeElement', {func: removeElement, args: [[3, 2, 2, 3], 3]}],
+  ['removeDuplicates', {func: removeDuplicates, args: [[0,0,1,1,1,2,2,3,3,4]]}],
   ['----- Dynamic Programming -------'],
   ['amountUniquePaths', {func: amountUniquePaths, args: [4, 5]}],
 ])
