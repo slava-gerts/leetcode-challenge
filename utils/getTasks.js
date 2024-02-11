@@ -39,6 +39,8 @@ import {rotateMatrix} from '../Arrays/rotateMatrix.js'
 import {trapWater, trapWater2} from '../Arrays/trapWater.js'
 import {firstMissingPositive} from '../Arrays/firstMissingPositive.js'
 import {mergeArrays} from '../Arrays/mergeArrays.js'
+import {findMaximumValue} from '../Arrays/findMaximumValue.js'
+import {removeElement} from '../Arrays/removeElement.js'
 
 import {amountUniquePaths} from '../DynamicProgramming/amountUniquePaths.js'
 
@@ -89,8 +91,10 @@ export const tasks = new Map([
   ['rotateMatrix', {func: rotateMatrix, args: [cloneDeep(matrix)]}],
   ['trapWater', {func: trapWater, args: [[3, 0, 2, 0, 4]]}],
   ['trapWater2', {func: trapWater2, args: [[3, 0, 2, 0, 4]]}],
-  ['firstMissingPositiva', {func: firstMissingPositive, args: [[3, 4, -1, 1]]}],
+  ['firstMissingPositive', {func: firstMissingPositive, args: [[3, 4, -1, 1]]}],
   ['mergeArrays', {func: mergeArrays, args: [[3, 6, 9], 3, [2, 7, 8], 3]}],
+  ['findMaximumValue', {func: findMaximumValue, args: [[1, -3, 0.1, -5]]}],
+  ['removeElement', {func: removeElement, args: [[3, 2, 2, 3], 3]}],
   ['----- Dynamic Programming -------'],
   ['amountUniquePaths', {func: amountUniquePaths, args: [4, 5]}],
 ])
