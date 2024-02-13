@@ -47,6 +47,7 @@ import {majorityElement} from '../Arrays/majorityElement.js'
 import {rotateArray} from '../Arrays/rotateArray.js'
 
 import {amountUniquePaths} from '../DynamicProgramming/amountUniquePaths.js'
+import {fibonacci} from '../DynamicProgramming/fibonacci.js'
 
 import {linkedList, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList, cycledArray} from '../LinkedList/fixtures.js'
 import {
@@ -105,4 +106,5 @@ export const tasks = new Map([
   ['rotateArray', {func: rotateArray, args: [[1, 2, 3, 4, 5, 6, 7], 3]}],
   ['----- Dynamic Programming -------'],
   ['amountUniquePaths', {func: amountUniquePaths, args: [4, 5]}],
+  ['fibonacci', {func: fibonacci, args: [10]}],
 ])
