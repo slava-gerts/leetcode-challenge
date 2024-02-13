@@ -43,6 +43,8 @@ import {findMaximumValue} from '../Arrays/findMaximumValue.js'
 import {removeElement} from '../Arrays/removeElement.js'
 import {removeDuplicates} from '../Arrays/removeDuplicates.js'
 import {removeDuplicates2} from '../Arrays/removeDuplicates2.js'
+import {majorityElement} from '../Arrays/majorityElement.js'
+import {rotateArray} from '../Arrays/rotateArray.js'
 
 import {amountUniquePaths} from '../DynamicProgramming/amountUniquePaths.js'
 
@@ -99,6 +101,8 @@ export const tasks = new Map([
   ['removeElement', {func: removeElement, args: [[3, 2, 2, 3], 3]}],
   ['removeDuplicates', {func: removeDuplicates, args: [[0,0,1,1,1,2,2,3,3,4]]}],
   ['removeDuplicates2', {func: removeDuplicates2, args: [[0,0,1,1,1,2,3]]}],
+  ['majorityElement', {func: majorityElement, args: [[2, 2, 3, 3, 3, 2, 2]]}],
+  ['rotateArray', {func: rotateArray, args: [[1, 2, 3, 4, 5, 6, 7], 3]}],
   ['----- Dynamic Programming -------'],
   ['amountUniquePaths', {func: amountUniquePaths, args: [4, 5]}],
 ])
