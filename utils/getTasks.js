@@ -46,6 +46,8 @@ import {removeDuplicates2} from '../Arrays/removeDuplicates2.js'
 import {majorityElement} from '../Arrays/majorityElement.js'
 import {rotateArray} from '../Arrays/rotateArray.js'
 import {canJump} from '../Arrays/canJump.js'
+import {canJump2} from '../Arrays/canJump2.js'
+import {hIndex} from '../Arrays/hIndex.js'
 
 import {amountUniquePaths} from '../DynamicProgramming/amountUniquePaths.js'
 import {fibonacci} from '../DynamicProgramming/fibonacci.js'
@@ -106,6 +108,8 @@ export const tasks = new Map([
   ['majorityElement', {func: majorityElement, args: [[2, 2, 3, 3, 3, 2, 2]]}],
   ['rotateArray', {func: rotateArray, args: [[1, 2, 3, 4, 5, 6, 7], 3]}],
   ['canJump', {func: canJump, args: [[2,3,1,1,4]]}],
+  ['canJump2', {func: canJump2, args: [[2,3,1,1,4]]}],
+  ['hIndex', {func: hIndex, args: [[4,4,0,0]]}],
   ['----- Dynamic Programming -------'],
   ['amountUniquePaths', {func: amountUniquePaths, args: [4, 5]}],
   ['fibonacci', {func: fibonacci, args: [10]}],
