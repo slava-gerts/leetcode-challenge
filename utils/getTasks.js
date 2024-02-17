@@ -48,6 +48,8 @@ import {rotateArray} from '../Arrays/rotateArray.js'
 import {canJump} from '../Arrays/canJump.js'
 import {canJump2} from '../Arrays/canJump2.js'
 import {hIndex} from '../Arrays/hIndex.js'
+import {canCompleteCircuit} from '../Arrays/canCompleteCircuit.js'
+import {candy} from '../Arrays/candy.js'
 
 import {amountUniquePaths} from '../DynamicProgramming/amountUniquePaths.js'
 import {fibonacci} from '../DynamicProgramming/fibonacci.js'
@@ -99,7 +101,7 @@ export const tasks = new Map([
   ['rotateMatrix', {func: rotateMatrix, args: [cloneDeep(matrix)]}],
   ['trapWater', {func: trapWater, args: [[3, 0, 2, 0, 4]]}],
   ['trapWater2', {func: trapWater2, args: [[3, 0, 2, 0, 4]]}],
-  ['firstMissingPositive', {func: firstMissingPositive, args: [[3, 4, -1, 1]]}],
+  ['firstMissingPositive', {func: firstMissingPositive, args: [[-1, -1, -1, -2, -4, 0, 3, -3]]}],
   ['mergeArrays', {func: mergeArrays, args: [[3, 6, 9], 3, [2, 7, 8], 3]}],
   ['findMaximumValue', {func: findMaximumValue, args: [[1, -3, 0.1, -5]]}],
   ['removeElement', {func: removeElement, args: [[3, 2, 2, 3], 3]}],
@@ -110,6 +112,8 @@ export const tasks = new Map([
   ['canJump', {func: canJump, args: [[2,3,1,1,4]]}],
   ['canJump2', {func: canJump2, args: [[2,3,1,1,4]]}],
   ['hIndex', {func: hIndex, args: [[4,4,0,0]]}],
+  ['canCompleteCircuit', {func: canCompleteCircuit, args: [[5,1,2,3,4], [4,4,1,5,1]]}],
+  ['candy', {func: candy, args: [[29, 53, 82, 82, 79, 12]]}],
   ['----- Dynamic Programming -------'],
   ['amountUniquePaths', {func: amountUniquePaths, args: [4, 5]}],
   ['fibonacci', {func: fibonacci, args: [10]}],
