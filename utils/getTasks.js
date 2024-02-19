@@ -52,6 +52,8 @@ import {canCompleteCircuit} from '../Arrays/canCompleteCircuit.js'
 import {candy} from '../Arrays/candy.js'
 import {romanToInt} from '../Arrays/romanToInt.js'
 import {intToRoman} from '../Arrays/intToRoman.js'
+import {longestCommonPrefix} from '../Arrays/longestCommonPrefix.js'
+import {separateLiquids} from '../Arrays/separateLiquids.js'
 
 import {amountUniquePaths} from '../DynamicProgramming/amountUniquePaths.js'
 import {fibonacci} from '../DynamicProgramming/fibonacci.js'
@@ -118,6 +120,8 @@ export const tasks = new Map([
   ['candy', {func: candy, args: [[29, 53, 82, 82, 79, 12]]}],
   ['romanToInt', {func: romanToInt, args: ['III']}],
   ['intToRoman', {func: intToRoman, args: [1994]}],
+  ['longestCommonPrefix', {func: longestCommonPrefix, args: [["flower","flow","flight"]]}],
+  ['separateLiquids', {func: separateLiquids, args: [[['H', 'H', 'W', 'O'],['W','W','O','W'],['H','H','O','O']]]}],
   ['----- Dynamic Programming -------'],
   ['amountUniquePaths', {func: amountUniquePaths, args: [4, 5]}],
   ['fibonacci', {func: fibonacci, args: [10]}],
