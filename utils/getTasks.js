@@ -54,6 +54,9 @@ import {romanToInt} from '../Arrays/romanToInt.js'
 import {intToRoman} from '../Arrays/intToRoman.js'
 import {longestCommonPrefix} from '../Arrays/longestCommonPrefix.js'
 import {separateLiquids} from '../Arrays/separateLiquids.js'
+import {reverseWords} from '../Arrays/reverseWords.js'
+import {zigzagConversion} from '../Arrays/zigzagConversion.js'
+import {findFirstOccurence} from '../Arrays/findFirstOccurence.js'
 
 import {amountUniquePaths} from '../DynamicProgramming/amountUniquePaths.js'
 import {fibonacci} from '../DynamicProgramming/fibonacci.js'
@@ -122,6 +125,9 @@ export const tasks = new Map([
   ['intToRoman', {func: intToRoman, args: [1994]}],
   ['longestCommonPrefix', {func: longestCommonPrefix, args: [["flower","flow","flight"]]}],
   ['separateLiquids', {func: separateLiquids, args: [[['H', 'H', 'W', 'O'],['W','W','O','W'],['H','H','O','O']]]}],
+  ['reverseWords', {func: reverseWords, args: ['a good   example']}],
+  ['zigzagConversion', {func: zigzagConversion, args: ['PAYPALISHIRING', 3]}],
+  ['findFirstOccurence', {func: findFirstOccurence, args: ['mississipi', 'issip']}],
   ['----- Dynamic Programming -------'],
   ['amountUniquePaths', {func: amountUniquePaths, args: [4, 5]}],
   ['fibonacci', {func: fibonacci, args: [10]}],
