@@ -57,6 +57,7 @@ import {separateLiquids} from '../Arrays/separateLiquids.js'
 import {reverseWords} from '../Arrays/reverseWords.js'
 import {zigzagConversion} from '../Arrays/zigzagConversion.js'
 import {findFirstOccurence} from '../Arrays/findFirstOccurence.js'
+import {textJustification} from '../Arrays/textJustification.js'
 
 import {amountUniquePaths} from '../DynamicProgramming/amountUniquePaths.js'
 import {fibonacci} from '../DynamicProgramming/fibonacci.js'
@@ -128,6 +129,7 @@ export const tasks = new Map([
   ['reverseWords', {func: reverseWords, args: ['a good   example']}],
   ['zigzagConversion', {func: zigzagConversion, args: ['PAYPALISHIRING', 3]}],
   ['findFirstOccurence', {func: findFirstOccurence, args: ['mississipi', 'issip']}],
+  ['textJustification', {func: textJustification, args: [["What","must","be","acknowledgment","shall","be"], 16]}],
   ['----- Dynamic Programming -------'],
   ['amountUniquePaths', {func: amountUniquePaths, args: [4, 5]}],
   ['fibonacci', {func: fibonacci, args: [10]}],
