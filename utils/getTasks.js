@@ -59,6 +59,9 @@ import {zigzagConversion} from '../Arrays/zigzagConversion.js'
 import {findFirstOccurence} from '../Arrays/findFirstOccurence.js'
 import {textJustification} from '../Arrays/textJustification.js'
 
+import {isPalindrome} from '../TwoPointers/isPalidrome.js'
+import {isSubsequence} from '../TwoPointers/isSubsequence.js'
+
 import {amountUniquePaths} from '../DynamicProgramming/amountUniquePaths.js'
 import {fibonacci} from '../DynamicProgramming/fibonacci.js'
 
@@ -133,4 +136,7 @@ export const tasks = new Map([
   ['----- Dynamic Programming -------'],
   ['amountUniquePaths', {func: amountUniquePaths, args: [4, 5]}],
   ['fibonacci', {func: fibonacci, args: [10]}],
+  ['----- Two Pointers -------'],
+  ['isPalidrome', {func: isPalindrome, args: ['A man, a plan, a canal: Panama']}],
+  ['isSubsequence', {func: isSubsequence, args: ['abc', 'ahbgdc']}],
 ])
