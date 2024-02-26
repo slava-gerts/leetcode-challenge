@@ -62,6 +62,10 @@ import {textJustification} from '../Arrays/textJustification.js'
 import {isPalindrome} from '../TwoPointers/isPalidrome.js'
 import {isSubsequence} from '../TwoPointers/isSubsequence.js'
 
+import {minSubArrayLen} from '../SlidingWindow/minSubArrayLen.js'
+import {lengthOfLongestSubstring} from '../SlidingWindow/lengthOfLongestSubstring.js'
+import {findSubstring} from '../SlidingWindow/findSubstring.js'
+
 import {amountUniquePaths} from '../DynamicProgramming/amountUniquePaths.js'
 import {fibonacci} from '../DynamicProgramming/fibonacci.js'
 
@@ -139,4 +143,8 @@ export const tasks = new Map([
   ['----- Two Pointers -------'],
   ['isPalidrome', {func: isPalindrome, args: ['A man, a plan, a canal: Panama']}],
   ['isSubsequence', {func: isSubsequence, args: ['abc', 'ahbgdc']}],
+  ['----- Sliding Window ------'],
+  ['minSubArrayLen', {func: minSubArrayLen, args: [7, [2,3,1,2,4,3]]}],
+  ['lengthOfLongestSubstring', {func: lengthOfLongestSubstring, args: ['asdfgab']}],
+  ['findSubstring', {func: findSubstring, args: ['barfoofoobarthefoobarman', ["bar","foo","the"]]}],
 ])
