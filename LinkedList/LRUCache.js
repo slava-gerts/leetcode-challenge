@@ -14,8 +14,8 @@ class LRUCache {
     this.capacity = capacity
     this.cache = new Map()
 
-    this.head = new Node()
-    this.tail = new Node()
+    this.head = new Node('head')
+    this.tail = new Node('tail')
 
     this.head.next = this.tail
     this.tail.prev = this.head

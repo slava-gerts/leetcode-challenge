@@ -16,6 +16,7 @@ export function mergeSort(array) {
 
   const mid = Math.floor(array.length / 2)
   const leftAr = array.splice(0, mid)
+  const rightAr = array.splice(mid)
   
-  return merge(mergeSort(leftAr), mergeSort(array))
+  return merge(mergeSort(leftAr), mergeSort(rightAr))
 }

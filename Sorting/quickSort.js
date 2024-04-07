@@ -1,11 +1,11 @@
-export function randomInteger(min, max) {
+export function randomInteger(min = 0, max) {
   return Math.floor(min + Math.random() * (max + 1 - min))
 }
 
 export function quickSort(arr) {
   if (arr.length < 2) return arr
 
-  const pivot = randomInteger(0, arr.length - 1)
+  const pivot = randomInteger(arr.length - 1)
 
   const left = []
   const right = []

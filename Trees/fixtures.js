@@ -4,6 +4,23 @@ function TreeNode(val, left, right) {
   this.right = (right===undefined ? null : right)
 }
 
+export const binaryTreeAncestor = new TreeNode(
+  3,
+  new TreeNode(
+    5,
+    new TreeNode(6),
+    new TreeNode(2, new TreeNode(7), new TreeNode(4))
+  ),
+  new TreeNode(
+    1,
+    new TreeNode(0),
+    new TreeNode(8)
+  )
+)
+
+export const binaryTreeAncestorNode1 = binaryTreeAncestor.left
+export const binaryTreeAncestorNode2 = binaryTreeAncestor.left.right.right
+
 export const binaryTree = new TreeNode(
   4,
   new TreeNode(
@@ -15,6 +32,34 @@ export const binaryTree = new TreeNode(
     7,
     new TreeNode(6),
     new TreeNode(9),
+  )
+)
+
+export const unbalancedBinaryTree = new TreeNode(
+  0,
+  null,
+  new TreeNode(
+    2236,
+    new TreeNode(
+      1277,
+      new TreeNode(519)
+    ),
+    new TreeNode(
+      2776,
+    )
+  )
+)
+
+export const completeTree = new TreeNode(
+  1,
+  new TreeNode(
+    2,
+    new TreeNode(4),
+    new TreeNode(5),
+  ),
+  new TreeNode(
+    3,
+    new TreeNode(6),
   )
 )
 
@@ -158,3 +203,17 @@ export const graph = {
   e: {d: 5, i: 2},
   i: {a: 3, e: 2},
 }
+
+export const gridOfIslands = [
+  ['1', '1', '0', '0', '0'],
+  ['1', '1', '0', '0', '0'],
+  ['0', '0', '1', '0', '0'],
+  ['0', '0', '0', '1', '1'],
+]
+
+export const surroundedRegions = [
+  ['X', 'X', 'X', 'X'],
+  ['X', 'O', 'O', 'X'],
+  ['X', 'X', 'O', 'X'],
+  ['X', 'O', 'X', 'X'],
+]
