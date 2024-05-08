@@ -44,9 +44,16 @@ import {numIslands} from '../Trees/numIslands.js'
 import {solveSurroundedRegions} from '../Trees/solveSurroundedRegions.js'
 import {evaluateDivision} from '../Trees/evaluateDivision.js'
 import {canFinish} from '../Trees/canFinish.js'
+import {snakesAndLadders} from '../Trees/snakesAndLadders.js'
 
 import {subsets} from '../Backtracking/subsets.js'
 import {findAllDuplicates} from '../Backtracking/findAllDuplicates.js'
+import {letterCombinations} from '../Backtracking/letterCombinations.js'
+import {combine} from '../Backtracking/combine.js'
+import {permutations} from '../Backtracking/permutations.js'
+import {combinationSum} from '../Backtracking/combinationSum.js'
+import {totalNQueens} from '../Backtracking/lotalNQueens.js'
+import {generateParenthesis} from '../Backtracking/generateParenthesis.js'
 
 import {mergeSort} from '../Sorting/mergeSort.js'
 import {randomInteger} from '../Sorting/randomInteger.js'
@@ -89,9 +96,9 @@ import {minWindow} from '../SlidingWindow/minWindow.js'
 import {amountUniquePaths} from '../DynamicProgramming/amountUniquePaths.js'
 import {fibonacci} from '../DynamicProgramming/fibonacci.js'
 
-import {linkedList, shortLinkedList, linkedListWithDuplicates, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList, cycledArray} from '../LinkedList/fixtures.js'
+import {linkedList, unsortedLinkedList, shortLinkedList, linkedListWithDuplicates, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList, cycledArray} from '../LinkedList/fixtures.js'
 import {
-  binaryTreeAncestor, surroundedRegions, gridOfIslands, binaryTreeAncestorNode1, binaryTreeAncestorNode2, unbalancedBinaryTree, binaryTree, binaryTree2, unBalancedTree, tree, completeTree, subTree, searchBinaryTree, childSearchBinaryTreeNode1, childSearchBinaryTreeNode2, goodNodesTree, invalidSearchTree, graph, sumTree, arbitraryTree,
+  binaryTreeAncestor, snakesAndLaddersBoard, surroundedRegions, gridOfIslands, binaryTreeAncestorNode1, binaryTreeAncestorNode2, unbalancedBinaryTree, binaryTree, binaryTree2, unBalancedTree, tree, completeTree, subTree, searchBinaryTree, childSearchBinaryTreeNode1, childSearchBinaryTreeNode2, goodNodesTree, invalidSearchTree, graph, sumTree, arbitraryTree,
 } from '../Trees/fixtures.js'
 import {matrix} from '../Arrays/fixtures.js'
 
@@ -113,7 +120,41 @@ import {evalPolish} from '../Stack/evalPolish.js'
 import {basicCalc2} from '../Stack/basicCalc2.js'
 import {basicCalc} from '../Stack/basicCalc.js'
 
+import {buildTrie} from '../Trie/Trie.js'
+import {findWords} from '../Trie/findWords.js'
+
+import {board as trieBoard, words as trieWords} from '../Trie/fixtures.js'
+
+import {sortList} from '../DivideAndConquer/sortList.js'
+import {construct} from '../DivideAndConquer/construct.js'
+import {maxSubarraySumCircular} from '../DivideAndConquer/maxSubarraySumCircular.js'
+
+import {searchInsert} from '../BinarySearch/searchInsert.js'
+import {searchMatrix} from '../BinarySearch/searchMatrix.js'
+import {findPeakElement} from '../BinarySearch/findPeakElement.js'
+import {searchRange} from '../BinarySearch/searchRange.js'
+import {findMin} from '../BinarySearch/findMin.js'
+import {findMedianSortedArrays} from '../BinarySearch/findMedianSortedArrays.js'
+
+import {findKthLargest} from '../Heap/findKthLargest.js'
+import {findMaximizedCapital} from '../Heap/findMaxmizedCapital.js'
+import {kSmallestPairs} from '../Heap/kSmallestPairs.js'
+import {medianFinder} from '../Heap/medianFinder.js'
+
+
 export const tasks = new Map([
+  ['------ Heap ------'],
+  ['medianFinder', {func: medianFinder, args: []}],
+  ['kSmallestPairs', {func: kSmallestPairs, args: [[1,1,2], [1,2,3], 2]}],
+  ['findMaximizedCapital', {func: findMaximizedCapital, args: [2, 0, [1,2,3], [0,1,1]]}],
+  ['findKthLargest', {func: findKthLargest, args: [[3,2,3,1,2,4,5,5,6], 3]}],
+  ['------ Binary Search ------'],
+  ['findMedianSortedArrays', {func: findMedianSortedArrays, args: [[1,3], [2]]}],
+  ['findMin', {func: findMin, args: [[3,1,2]]}],
+  ['searchRange', {func: searchRange, args: [[5,7,7,8,8,10], 8]}],
+  ['findPeakElement', {func: findPeakElement, args: [[1,2,1,5,3,6,4]]}],
+  ['searchInsert', {func: searchInsert, args: [[1,3,5,6], 7]}],
+  ['searchMatrix', {func: searchMatrix, args: [[[1,3,5,7],[10,11,16,20],[23,30,34,60]], 12]}],
   ['------ Linked list ------'],
   ['reverseLinkedList', {func: reverseLinkedList, args: [cloneDeep(linkedList)]}],
   ['reverseLinkedListRecursion', {func: reverseLinkedListRecursion, args: [cloneDeep(linkedList)]}],
@@ -160,9 +201,16 @@ export const tasks = new Map([
   ['solveSurroundedRegions', {func: solveSurroundedRegions, args: [cloneDeep(surroundedRegions)]}],
   ['evaluateDivision', {func: evaluateDivision, args: [[["x1","x2"],["x2","x3"],["x3","x4"],["x4","x5"]], [3.0,4.0,5.0,6.0], [["x1","x5"],["x5","x2"],["x2","x4"]]]}],
   ['canFinish', {func: canFinish, args: [2, [[1,0], [0,1]]]}],
+  ['snakesAndLadders', {func: snakesAndLadders, args: [snakesAndLaddersBoard]}],
   ['---- Backtracking ----'],
   ['subsets', {func: subsets, args: [[1, 2, 3]]}],
   ['fundAllDuplicates', {func: findAllDuplicates, args: [[4,3,2,7,8,2,3,1]]}],
+  ['letterCombinations', {func: letterCombinations, args: ['23']}],
+  ['combine', {func: combine, args: [4, 2]}],
+  ['permutations', {func: permutations, args: [[1, 2, 3]]}],
+  ['combinationSum', {func: combinationSum, args: [[2,3,6,7], 7]}],
+  ['totalNQueens', {func: totalNQueens, args: [4]}],
+  ['generateParenthesis', {func: generateParenthesis, args: [3]}],
   ['----- Sorting -----'],
   ['mergeSorting', {func: mergeSort, args: [[3, 5, 1, 6, 9, 8, 2]]}],
   ['randomInteger', {func: randomInteger, args: [0, 10]}],
@@ -223,4 +271,11 @@ export const tasks = new Map([
   ['evalPolish', {func: evalPolish, args: [['2', '1', '+', '3', '*']]}],
   ['basicCalc2', {func: basicCalc2, args: ['3+2*2']}],
   ['basicCalc', {func: basicCalc, args: ['(1+(4+5+2)-3)+(6+8)']}],
+  ['----- Trie -------'],
+  ['buildTrie', {func: buildTrie, args: []}],
+  ['findWords', {func: findWords, args: [trieBoard, trieWords]}],
+  ['----- Divide and Conquer'],
+  ['sortList', {func: sortList, args: [unsortedLinkedList]}],
+  ['construct', {func: construct, args: [[[0,1],[1,0]]]}],
+  ['maxSubarraySumCircular', {func: maxSubarraySumCircular, args: [[5,-3,5]]}],
 ])

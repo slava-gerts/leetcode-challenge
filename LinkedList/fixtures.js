@@ -15,6 +15,24 @@ export const linkedList = {
   }
 }
 
+export const unsortedLinkedList = {
+  val: 5,
+  next: {
+    val: 2,
+    next: {
+      val: 4,
+      next: {
+        val: 3,
+        next: {
+          val: 1,
+          next: null,
+        }
+      }
+    }
+  }
+}
+
+
 export const shortLinkedList = {
   val: 1,
   next: {
