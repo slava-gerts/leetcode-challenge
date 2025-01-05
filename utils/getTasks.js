@@ -59,6 +59,7 @@ import {mergeSort} from '../Sorting/mergeSort.js'
 import {randomInteger} from '../Sorting/randomInteger.js'
 import {quickSort} from '../Sorting/quickSort.js'
 
+import {NumMatrix} from '../Arrays/sum2DRegions.js'
 import {smartSum} from '../Arrays/smartSum.js'
 import {rotateMatrix} from '../Arrays/rotateMatrix.js'
 import {trapWater, trapWater2} from '../Arrays/trapWater.js'
