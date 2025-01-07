@@ -93,6 +93,8 @@ import {minSubArrayLen} from '../SlidingWindow/minSubArrayLen.js'
 import {lengthOfLongestSubstring} from '../SlidingWindow/lengthOfLongestSubstring.js'
 import {findSubstring} from '../SlidingWindow/findSubstring.js'
 import {minWindow} from '../SlidingWindow/minWindow.js'
+import {totalFruit} from '../SlidingWindow/totalFruit.js'
+import {minFlips} from '../SlidingWindow/minFlips.js'
 
 import {amountUniquePaths} from '../DynamicProgramming/amountUniquePaths.js'
 import {fibonacci} from '../DynamicProgramming/fibonacci.js'
@@ -250,6 +252,8 @@ export const tasks = new Map([
   ['isSubsequence', {func: isSubsequence, args: ['abc', 'ahbgdc']}],
   ['longestPalindrome', {func: longestPalindrome, args: ['asdfghjk']}],
   ['----- Sliding Window ------'],
+  ['minFlips', {func: minFlips, args: ['111000']}],
+  ['totalFruit', {func: totalFruit, args: [[1,2,3,2,2]]}],
   ['minSubArrayLen', {func: minSubArrayLen, args: [7, [2,3,1,2,4,3]]}],
   ['lengthOfLongestSubstring', {func: lengthOfLongestSubstring, args: ['asdfgab']}],
   ['findSubstring', {func: findSubstring, args: ['barfoofoobarthefoobarman', ["bar","foo","the"]]}],
