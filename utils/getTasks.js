@@ -124,6 +124,7 @@ import {basicCalc2} from '../Stack/basicCalc2.js'
 import {basicCalc} from '../Stack/basicCalc.js'
 import {removeStars} from '../Stack/removeStars.js'
 import {validateStackSequence} from '../Stack/validateStackSequence.js'
+import {removeKDigits} from '../Stack/removeKDigits.js'
 
 import {buildTrie} from '../Trie/Trie.js'
 import {findWords} from '../Trie/findWords.js'
@@ -274,6 +275,7 @@ export const tasks = new Map([
   ['insertInterval', {func: insertInterval, args: [[[1,5]], [0,3]]}],
   ['findMinArrowShots', {func: findMinArrowShots, args: [[ [10,16], [2,8], [1,6], [7,12] ]]}],
   ['----- Stack ------'],
+  ['removeKDigits', {func: removeKDigits, args: ['1432219', 3]}],
   ['validateStackSequence', {func: validateStackSequence, args: [[1, 2, 3, 4, 5], [4, 3, 5, 1, 2]]}],
   ['removeStars', {func: removeStars, args: ['leet**cod*e']}],
   ['simplifyPath', {func: simplifyPath, args: ['/a/./b/../../c/']}],
