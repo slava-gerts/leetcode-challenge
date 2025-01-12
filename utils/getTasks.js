@@ -141,6 +141,7 @@ import {findPeakElement} from '../BinarySearch/findPeakElement.js'
 import {searchRange} from '../BinarySearch/searchRange.js'
 import {findMin} from '../BinarySearch/findMin.js'
 import {findMedianSortedArrays} from '../BinarySearch/findMedianSortedArrays.js'
+import {singleNonDuplicate} from '../BinarySearch/singleNonDuplicate.js'
 
 import {findKthLargest} from '../Heap/findKthLargest.js'
 import {findMaximizedCapital} from '../Heap/findMaxmizedCapital.js'
@@ -155,6 +156,7 @@ export const tasks = new Map([
   ['findMaximizedCapital', {func: findMaximizedCapital, args: [2, 0, [1,2,3], [0,1,1]]}],
   ['findKthLargest', {func: findKthLargest, args: [[3,2,3,1,2,4,5,5,6], 3]}],
   ['------ Binary Search ------'],
+  ['singleNonDuplicate', {func: singleNonDuplicate, args: [[1,1,2,3,3,4,4,8,8]]}],
   ['findMedianSortedArrays', {func: findMedianSortedArrays, args: [[1,3], [2]]}],
   ['findMin', {func: findMin, args: [[3,1,2]]}],
   ['searchRange', {func: searchRange, args: [[5,7,7,8,8,10], 8]}],
