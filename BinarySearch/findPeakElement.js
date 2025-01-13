@@ -32,5 +32,5 @@ export function findPeakElement(nums) {
             start = mid + 1;
         }
     }
-    return start;
+    return start
 }
