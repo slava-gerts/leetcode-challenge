@@ -14,6 +14,7 @@ import {reverseBetween} from '../LinkedList/reverseBetween.js'
 import {reverseKGroup} from '../LinkedList/reverseKGroup.js'
 import {deleteDuplicates} from '../LinkedList/deleteDuplicates.js'
 import {partition} from '../LinkedList/partition.js'
+import {mergeInBetween} from '../LinkedList/mergeInBetween.js'
 
 import {invertTree} from '../Trees/invertTree.js'
 import {maxDepth} from '../Trees/maxDepth.js'
@@ -142,6 +143,7 @@ import {searchRange} from '../BinarySearch/searchRange.js'
 import {findMin} from '../BinarySearch/findMin.js'
 import {findMedianSortedArrays} from '../BinarySearch/findMedianSortedArrays.js'
 import {singleNonDuplicate} from '../BinarySearch/singleNonDuplicate.js'
+import {shipWithinDays} from '../BinarySearch/shipWithinDays.js'
 
 import {findKthLargest} from '../Heap/findKthLargest.js'
 import {findMaximizedCapital} from '../Heap/findMaxmizedCapital.js'
@@ -156,6 +158,7 @@ export const tasks = new Map([
   ['findMaximizedCapital', {func: findMaximizedCapital, args: [2, 0, [1,2,3], [0,1,1]]}],
   ['findKthLargest', {func: findKthLargest, args: [[3,2,3,1,2,4,5,5,6], 3]}],
   ['------ Binary Search ------'],
+  ['shipWithinDays', {func: shipWithinDays, args: [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5]}],
   ['singleNonDuplicate', {func: singleNonDuplicate, args: [[1,1,2,3,3,4,4,8,8]]}],
   ['findMedianSortedArrays', {func: findMedianSortedArrays, args: [[1,3], [2]]}],
   ['findMin', {func: findMin, args: [[3,1,2]]}],
@@ -164,6 +167,7 @@ export const tasks = new Map([
   ['searchInsert', {func: searchInsert, args: [[1,3,5,6], 7]}],
   ['searchMatrix', {func: searchMatrix, args: [[[1,3,5,7],[10,11,16,20],[23,30,34,60]], 12]}],
   ['------ Linked list ------'],
+  ['mergeInBetween', {func: mergeInBetween, args: [cloneDeep(linkedList), 1, 2, cloneDeep(l2Big)]}],
   ['reverseLinkedList', {func: reverseLinkedList, args: [cloneDeep(linkedList)]}],
   ['reverseLinkedListRecursion', {func: reverseLinkedListRecursion, args: [cloneDeep(linkedList)]}],
   ['findMiddle', {func: findMiddle, args: [cloneDeep(linkedList)]}],
