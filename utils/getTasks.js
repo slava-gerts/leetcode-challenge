@@ -18,6 +18,7 @@ import {mergeInBetween} from '../LinkedList/mergeInBetween.js'
 import {removeNodes} from '../LinkedList/removeNodes.js'
 import {pairSum} from '../LinkedList/pairSum.js'
 import {swapNodes} from '../LinkedList/swapNodes.js'
+import {BrowserHistory} from '../LinkedList/designBrowserHistory.js'
 
 import {invertTree} from '../Trees/invertTree.js'
 import {maxDepth} from '../Trees/maxDepth.js'
