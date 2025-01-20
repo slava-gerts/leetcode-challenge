@@ -19,6 +19,7 @@ import {removeNodes} from '../LinkedList/removeNodes.js'
 import {pairSum} from '../LinkedList/pairSum.js'
 import {swapNodes} from '../LinkedList/swapNodes.js'
 import {BrowserHistory} from '../LinkedList/designBrowserHistory.js'
+import {swapPairs} from '../LinkedList/swapPairs.js'
 
 import {invertTree} from '../Trees/invertTree.js'
 import {maxDepth} from '../Trees/maxDepth.js'
@@ -104,7 +105,7 @@ import {minFlips} from '../SlidingWindow/minFlips.js'
 import {amountUniquePaths} from '../DynamicProgramming/amountUniquePaths.js'
 import {fibonacci} from '../DynamicProgramming/fibonacci.js'
 
-import {pairLinkedList, removeNodesList, linkedList, unsortedLinkedList, shortLinkedList, linkedListWithDuplicates, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList, cycledArray} from '../LinkedList/fixtures.js'
+import {swapPairsList, pairLinkedList, removeNodesList, linkedList, unsortedLinkedList, shortLinkedList, linkedListWithDuplicates, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList, cycledArray} from '../LinkedList/fixtures.js'
 import {
   binaryTreeAncestor, snakesAndLaddersBoard, surroundedRegions, gridOfIslands, binaryTreeAncestorNode1, binaryTreeAncestorNode2, unbalancedBinaryTree, binaryTree, binaryTree2, unBalancedTree, tree, completeTree, subTree, searchBinaryTree, childSearchBinaryTreeNode1, childSearchBinaryTreeNode2, goodNodesTree, invalidSearchTree, graph, sumTree, arbitraryTree,
 } from '../Trees/fixtures.js'
@@ -171,6 +172,7 @@ export const tasks = new Map([
   ['searchInsert', {func: searchInsert, args: [[1,3,5,6], 7]}],
   ['searchMatrix', {func: searchMatrix, args: [[[1,3,5,7],[10,11,16,20],[23,30,34,60]], 12]}],
   ['------ Linked list ------'],
+  ['swapPairs', {func: swapPairs, args: [cloneDeep(swapPairsList)]}],
   ['swapNodes', {func: swapNodes, args: [cloneDeep(linkedList), 2]}],
   ['pairSum', {func: pairSum, args: [cloneDeep(pairLinkedList)]}],
   ['removeNodes', {func: removeNodes, args: [cloneDeep(removeNodesList)]}],
