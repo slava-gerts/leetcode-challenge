@@ -53,6 +53,7 @@ import {solveSurroundedRegions} from '../Trees/solveSurroundedRegions.js'
 import {evaluateDivision} from '../Trees/evaluateDivision.js'
 import {canFinish} from '../Trees/canFinish.js'
 import {snakesAndLadders} from '../Trees/snakesAndLadders.js'
+import {tree2str} from '../Trees/tree2str.js'
 
 import {subsets} from '../Backtracking/subsets.js'
 import {findAllDuplicates} from '../Backtracking/findAllDuplicates.js'
@@ -197,6 +198,7 @@ export const tasks = new Map([
   ['deleterDuplicates', {func: deleteDuplicates, args: [cloneDeep(linkedListWithDuplicates)]}],
   ['partition', {func: partition, args: [cloneDeep(linkedList), 3]}],
   ['------ Tree -------'],
+  ['tree2str', {func: tree2str, args: [cloneDeep(binaryTree)]}],
   ['invertTree', {func: invertTree, args: [cloneDeep(binaryTree)]}],
   ['maxDepth', {func: maxDepth, args: [cloneDeep(binaryTree2)]}],
   ['diameterOfBinaryTree', {func: diameterOfBinaryTree, args: [cloneDeep(binaryTree2)]}],
