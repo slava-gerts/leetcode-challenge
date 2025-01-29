@@ -54,6 +54,7 @@ import {evaluateDivision} from '../Trees/evaluateDivision.js'
 import {canFinish} from '../Trees/canFinish.js'
 import {snakesAndLadders} from '../Trees/snakesAndLadders.js'
 import {tree2str} from '../Trees/tree2str.js'
+import {insertIntoBST} from '../Trees/insertIntoBST.js'
 
 import {subsets} from '../Backtracking/subsets.js'
 import {findAllDuplicates} from '../Backtracking/findAllDuplicates.js'
@@ -198,6 +199,7 @@ export const tasks = new Map([
   ['deleterDuplicates', {func: deleteDuplicates, args: [cloneDeep(linkedListWithDuplicates)]}],
   ['partition', {func: partition, args: [cloneDeep(linkedList), 3]}],
   ['------ Tree -------'],
+  ['insertIntoBST', {func: insertIntoBST, args: [cloneDeep(binaryTree), 5]}],
   ['tree2str', {func: tree2str, args: [cloneDeep(binaryTree)]}],
   ['invertTree', {func: invertTree, args: [cloneDeep(binaryTree)]}],
   ['maxDepth', {func: maxDepth, args: [cloneDeep(binaryTree2)]}],
