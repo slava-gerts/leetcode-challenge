@@ -56,6 +56,7 @@ import {snakesAndLadders} from '../Trees/snakesAndLadders.js'
 import {tree2str} from '../Trees/tree2str.js'
 import {insertIntoBST} from '../Trees/insertIntoBST.js'
 import {deleteNode} from '../Trees/deleteNode.js'
+import {minTime} from '../Trees/minTime.js'
 
 import {subsets} from '../Backtracking/subsets.js'
 import {findAllDuplicates} from '../Backtracking/findAllDuplicates.js'
@@ -200,6 +201,7 @@ export const tasks = new Map([
   ['deleterDuplicates', {func: deleteDuplicates, args: [cloneDeep(linkedListWithDuplicates)]}],
   ['partition', {func: partition, args: [cloneDeep(linkedList), 3]}],
   ['------ Tree -------'],
+  ['minTime', {func: minTime, args: [[[0,1], [0,2], [1,4], [1,5], [2,3], [2,6]], [false, false, true, false, true, true, false]]}],
   ['deleteNode', {func: deleteNode, args: [cloneDeep(binaryTree), 7]}],
   ['insertIntoBST', {func: insertIntoBST, args: [cloneDeep(binaryTree), 5]}],
   ['tree2str', {func: tree2str, args: [cloneDeep(binaryTree)]}],
