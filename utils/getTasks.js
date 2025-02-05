@@ -57,6 +57,8 @@ import {tree2str} from '../Trees/tree2str.js'
 import {insertIntoBST} from '../Trees/insertIntoBST.js'
 import {deleteNode} from '../Trees/deleteNode.js'
 import {minTime} from '../Trees/minTime.js'
+import {findDuplicateSubtrees} from '../Trees/findDuplicateSubtrees.js'
+import {isCompleteTree} from '../Trees/isCompleteTree.js'
 
 import {subsets} from '../Backtracking/subsets.js'
 import {findAllDuplicates} from '../Backtracking/findAllDuplicates.js'
@@ -113,7 +115,7 @@ import {fibonacci} from '../DynamicProgramming/fibonacci.js'
 
 import {swapPairsList, pairLinkedList, removeNodesList, linkedList, unsortedLinkedList, shortLinkedList, linkedListWithDuplicates, l1, l2, l1Big, l2Big, linkedListWithRandomField, cycledList, cycledArray} from '../LinkedList/fixtures.js'
 import {
-  binaryTreeAncestor, snakesAndLaddersBoard, surroundedRegions, gridOfIslands, binaryTreeAncestorNode1, binaryTreeAncestorNode2, unbalancedBinaryTree, binaryTree, binaryTree2, unBalancedTree, tree, completeTree, subTree, searchBinaryTree, childSearchBinaryTreeNode1, childSearchBinaryTreeNode2, goodNodesTree, invalidSearchTree, graph, sumTree, arbitraryTree,
+  binaryTreeDuplicates, binaryTreeAncestor, snakesAndLaddersBoard, surroundedRegions, gridOfIslands, binaryTreeAncestorNode1, binaryTreeAncestorNode2, unbalancedBinaryTree, binaryTree, binaryTree2, unBalancedTree, tree, completeTree, subTree, searchBinaryTree, childSearchBinaryTreeNode1, childSearchBinaryTreeNode2, goodNodesTree, invalidSearchTree, graph, sumTree, arbitraryTree,
 } from '../Trees/fixtures.js'
 import {matrix} from '../Arrays/fixtures.js'
 
@@ -201,6 +203,8 @@ export const tasks = new Map([
   ['deleterDuplicates', {func: deleteDuplicates, args: [cloneDeep(linkedListWithDuplicates)]}],
   ['partition', {func: partition, args: [cloneDeep(linkedList), 3]}],
   ['------ Tree -------'],
+  ['isCompleteTree', {func: isCompleteTree, args: [cloneDeep(binaryTreeDuplicates)]}],
+  ['findDuplicateSubtrees', {func: findDuplicateSubtrees, args: [cloneDeep(binaryTreeDuplicates)]}],
   ['minTime', {func: minTime, args: [[[0,1], [0,2], [1,4], [1,5], [2,3], [2,6]], [false, false, true, false, true, true, false]]}],
   ['deleteNode', {func: deleteNode, args: [cloneDeep(binaryTree), 7]}],
   ['insertIntoBST', {func: insertIntoBST, args: [cloneDeep(binaryTree), 5]}],

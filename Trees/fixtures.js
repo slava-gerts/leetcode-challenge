@@ -4,6 +4,22 @@ function TreeNode(val, left, right) {
   this.right = (right===undefined ? null : right)
 }
 
+export const binaryTreeDuplicates = new TreeNode(
+  1,
+  new TreeNode(
+    2,
+    new TreeNode(4),
+  ),
+  new TreeNode(
+    3,
+    new TreeNode(
+      2,
+      new TreeNode(4),
+    ),
+    new TreeNode(4),
+  ),
+)
+
 export const binaryTreeAncestor = new TreeNode(
   3,
   new TreeNode(
