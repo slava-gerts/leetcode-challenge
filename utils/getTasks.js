@@ -59,6 +59,7 @@ import {deleteNode} from '../Trees/deleteNode.js'
 import {minTime} from '../Trees/minTime.js'
 import {findDuplicateSubtrees} from '../Trees/findDuplicateSubtrees.js'
 import {isCompleteTree} from '../Trees/isCompleteTree.js'
+import {minOfTime} from '../Trees/minOfTime.js'
 
 import {subsets} from '../Backtracking/subsets.js'
 import {findAllDuplicates} from '../Backtracking/findAllDuplicates.js'
@@ -203,6 +204,7 @@ export const tasks = new Map([
   ['deleterDuplicates', {func: deleteDuplicates, args: [cloneDeep(linkedListWithDuplicates)]}],
   ['partition', {func: partition, args: [cloneDeep(linkedList), 3]}],
   ['------ Tree -------'],
+  ['minOfTime', {func: minOfTime, args: [6, 2, [2,2,-1,2,2,2], [0,0,1,0,0,0]]}],
   ['isCompleteTree', {func: isCompleteTree, args: [cloneDeep(binaryTreeDuplicates)]}],
   ['findDuplicateSubtrees', {func: findDuplicateSubtrees, args: [cloneDeep(binaryTreeDuplicates)]}],
   ['minTime', {func: minTime, args: [[[0,1], [0,2], [1,4], [1,5], [2,3], [2,6]], [false, false, true, false, true, true, false]]}],
